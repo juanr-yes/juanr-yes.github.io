@@ -4362,4 +4362,22 @@ input, select, textarea {
       font-size: 10px !important;
       line-height: unset !important;
     }
-	}
+    #toTop {
+      font-size: 20px;
+      padding: 20px 20px 20px 22px;
+      padding: 6px 15px;
+      background-color: gray;
+    }
+    .imagesDL {
+      flex-direction: column;
+    }
+    .imagesDL img {
+      width: 100%;
+    }
+    .imagesDL div:nth-child(1) {
+      margin-bottom: 10px;
+    }
+    .imagesDL div:nth-child(1) img {
+      object-position: right;
+    }
+  }
