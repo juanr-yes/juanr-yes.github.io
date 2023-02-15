@@ -3543,6 +3543,7 @@ input, select, textarea {
 
 				#banner p {
 					font-size: 0.8em;
+          width: 270px;
 				}
 
 		}
@@ -3970,6 +3971,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+      #banner .logo > div.headerButtons {
+        display: none
+      }
 
 			.wrapper {
 				margin: 2.5em 0;
@@ -4155,7 +4159,6 @@ input, select, textarea {
 				#footer .inner .contact {
 					margin: 0 0 3em 0;
 				}
-
 	}
 
 	@media screen and (max-width: 480px) {
@@ -4326,3 +4329,37 @@ input, select, textarea {
     -ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
     transition: opacity 0.2s ease-in-out, visibility 0.2s;
   }
+  .headerButtonsMob {
+    display: none;
+  }
+	@media screen and (max-width: 980px) {
+    .headerButtonsMob {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .wrapper.spotlight .image.img01 {
+      width: 200px;
+      display: block;
+      margin: 0 auto 20px !important;
+    }
+    .wrapper.spotlight .image.img01 img {
+      width: 100%;
+      height: 200px;
+    }
+    h2 {
+      text-align: left;
+    }
+    .moreInfo {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .moreInfo > a {
+      width: 150px;
+    }
+    .moreInfo > a::before {
+      font-size: 10px !important;
+      line-height: unset !important;
+    }
+	}
